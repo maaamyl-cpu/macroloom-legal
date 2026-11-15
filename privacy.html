@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MacroLoom Privacy Policy</title>
+  <meta name="description" content="How the MacroLoom app collects, stores, syncs and deletes your data, which services process it, and your rights.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="" width="32" height="32"> MacroLoom</a>
+      <nav class="site" aria-label="Legal pages">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
+          <li><a href="delete-account.html">Delete Your Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article>
+      <h1>MacroLoom Privacy Policy</h1>
+      <p class="meta">Last updated 15 November 2026 · Applies to the MacroLoom app for Android (<code>com.macroloom.app</code>) and iOS (<code>com.macroloom.app</code>), version 1.0.0 and later.</p>
+
+      <p>MacroLoom is a macro and weight tracking app. You log what you eat, set daily macro targets and record your weight. This policy explains what data the app handles, where it is stored, which service providers are involved, how long data is kept and how you can delete it. It is written to match what the app actually does; if we change what the app does, we update this page and its date.</p>
+
+      <div class="toc" aria-labelledby="toc-heading">
+        <strong id="toc-heading">Contents</strong>
+        <ol>
+          <li><a href="#controller">Who is responsible</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#data">What data MacroLoom processes</a></li>
+          <li><a href="#local">Data stored on your device</a></li>
+          <li><a href="#cloud">Data stored in your account (cloud sync)</a></li>
+          <li><a href="#purposes">Purposes and legal bases</a></li>
+          <li><a href="#processors">Service providers</a></li>
+          <li><a href="#not-collected">What MacroLoom does not do</a></li>
+          <li><a href="#permissions">App permissions</a></li>
+          <li><a href="#retention">Retention and deletion</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#transfers">International transfers</a></li>
+          <li><a href="#rights">Your rights</a></li>
+          <li><a href="#children">Age requirement</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </div>
+
+      <h2 id="controller">1. Who is responsible</h2>
+      <p>MacroLoom is developed and published by <strong>Matias Myllymäki</strong>, a private individual resident in Finland, who is the data controller for the processing described here. MacroLoom is not operated by a company.</p>
+      <p>Privacy contact: <a href="mailto:macroloom.app@gmail.com?subject=MacroLoom%20privacy%20question">macroloom.app@gmail.com</a></p>
+      <p>This mailbox is the contact channel for every request under this policy. We do not publish a postal address or telephone number; where a competent authority or the law requires further contact details, we provide them on request.</p>
+
+      <h2 id="summary">2. Summary</h2>
+      <ul>
+        <li>You need an account to use MacroLoom. You sign in with Google or Apple (these are the only sign-in methods the app offers); the app never sees or stores a password.</li>
+        <li>Everything you track (foods, meals, macro targets, weight) is stored in a local database on your device and synced to your account on our server so that it survives reinstalling and can move to a new phone.</li>
+        <li>Paid access is handled by Google Play or the App Store, with RevenueCat checking your purchase. We never receive card or bank details.</li>
+        <li>There is no advertising, no analytics or tracking SDK, no crash-reporting SDK and no selling or sharing of data for marketing.</li>
+        <li>You can delete your account and all of its data from inside the app at any time, or by e-mail. See <a href="delete-account.html">Delete Your Account</a>.</li>
+        <li>MacroLoom is for adults only (18+).</li>
+      </ul>
+
+      <h2 id="data">3. What data MacroLoom processes</h2>
+      <div class="table-scroll">
+      <table>
+        <thead><tr><th>Category</th><th>Data</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Account</td><td>E-mail address; a random account identifier (UUID) created by our authentication service; the identifier of your Google or Apple identity; your name and a profile-picture link if your Google account provides them (Apple provides your name only on the first sign-in and only if you choose to share it; Apple may give us a private relay e-mail address instead of your real one); sign-in and token-refresh timestamps.</td><td>Google / Apple sign-in, via Supabase Auth</td></tr>
+          <tr><td>Food library</td><td>Food names you enter, whether they are per 100 g or per serving, and their protein, carbohydrate and fat values.</td><td>You</td></tr>
+          <tr><td>Food log</td><td>Each logged entry: the food name as logged, quantity, macro values, timestamp, and whether it was a quick add.</td><td>You</td></tr>
+          <tr><td>Tracking periods</td><td>Start and end times of each tracking period and the macro targets in force during it.</td><td>You / the app</td></tr>
+          <tr><td>Weight history</td><td>Date and weight in kilograms for each weigh-in.</td><td>You</td></tr>
+          <tr><td>Settings</td><td>Daily protein, carbohydrate and fat targets; manual or automatic reset mode and reset time; weigh-in reminder on/off and time; theme preference.</td><td>You</td></tr>
+          <tr><td>Energy calculator inputs</td><td>If you use the Energy Needs Calculator, the values you type (such as weight, height, age, sex and activity level) are used on your device to compute an estimate. They are not stored and not sent anywhere; only the macro targets you choose to save are kept.</td><td>You</td></tr>
+          <tr><td>Device-sync status</td><td>A random device identifier generated by the app on first install (not a hardware identifier), a sync "generation" counter, timestamps of backups and claims, and the sync schema version. These let one device at a time be the active writer for your account.</td><td>The app</td></tr>
+          <tr><td>Access status</td><td>Trial start and end time; whether complimentary access was granted; whether a purchase gives you full access (held by RevenueCat and Google Play / Apple).</td><td>Our server, RevenueCat, the store</td></tr>
+          <tr><td>Purchase information</td><td>Purchase and subscription status for MacroLoom products, store transaction identifiers and receipts, prices and currency, and the device and app metadata RevenueCat's SDK sends with each request (such as platform, OS and app version). Your card or payment details stay with Google or Apple.</td><td>Google Play / App Store, RevenueCat</td></tr>
+          <tr><td>Legacy import ledger</td><td>If you migrated data from the old MacroTracker app (a feature available only in development builds), a record of that import: the export's identifier, checksum, time, size and row counts.</td><td>The app</td></tr>
+          <tr><td>Deletion records</td><td>While an in-app account deletion is in progress, a record of the request. After an in-app deletion, only the account's UUID, the deletion time and the cleanup status (see <a href="#retention">Retention</a>). For deletion requests made by e-mail, the e-mail exchange itself.</td><td>Our server; your e-mail</td></tr>
+          <tr><td>Technical server data</td><td>Our hosting provider records technical request data (such as IP address, request path and timestamps) in its platform logs to operate the service. On our current hosting plan these logs are kept for one day. We do not add our own analytics or user tracking to these logs.</td><td>Supabase platform</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p><strong>Health-related data.</strong> Your food log and weight history say something about your body and diet. Under the GDPR such data may count as data concerning health, which we process only because you choose to enter it in a tracking app built for exactly that purpose (your explicit consent, Article 9(2)(a)). You can stop at any time by deleting the entries or your account.</p>
+
+      <h2 id="local">4. Data stored on your device</h2>
+      <p>The app keeps a local SQLite database on your device with your food library, log, periods, weight history, settings, reminder and theme preferences, a queue of changes waiting to sync, the sync status described above and, during an account deletion, a progress marker. This database belongs to the app's private storage; other apps cannot read it.</p>
+      <p>Your sign-in session is stored encrypted: the session itself is encrypted with a key that is kept in the device's secure key store (Android Keystore / iOS Keychain). A small "offline access" record that lets the app keep working for a while without a network connection is kept in the same secure store and is tied to this device only.</p>
+      <p>Uninstalling the app removes all of this from the device. It does not delete your account (see <a href="delete-account.html">Delete Your Account</a>).</p>
+
+      <h2 id="cloud">5. Data stored in your account (cloud sync)</h2>
+      <p>When you are signed in and online, the app uploads your food library, log, periods, weight history and macro/reset settings to your account on our server, and restores them when you install MacroLoom on a new device. Sync is one device at a time: the device you most recently chose to "use" is the active one, and other devices become read-only until you switch.</p>
+      <p>Each record on the server is tagged with your account UUID. Access rules on the database (row-level security) only ever let a signed-in user read their own rows, and all changes go through server functions that check the caller's identity before writing. The app contains no administrative credentials; only a public project address and publishable key, which on their own grant no access to anyone's data.</p>
+      <p>Reminders (weigh-in notifications) are scheduled locally on your device. MacroLoom does not use push notifications and never registers a push token.</p>
+
+      <h2 id="purposes">6. Purposes and legal bases</h2>
+      <div class="table-scroll">
+      <table>
+        <thead><tr><th>Purpose</th><th>Data</th><th>Legal basis (GDPR)</th></tr></thead>
+        <tbody>
+          <tr><td>Providing the app: signing you in, storing and syncing your tracking data, restoring it on a new device</td><td>Account, tracking data, settings, device-sync status</td><td>Performance of our contract with you (Art. 6(1)(b)); explicit consent for the health-related tracking data you enter (Art. 9(2)(a))</td></tr>
+          <tr><td>Free trial, purchases and access control</td><td>Access status, purchase information</td><td>Contract (Art. 6(1)(b)); keeping purchase records where the law requires it (Art. 6(1)(c))</td></tr>
+          <tr><td>Weigh-in reminder</td><td>Reminder preference (local)</td><td>Your choice when you turn the reminder on (consent, Art. 6(1)(a)); you can turn it off at any time</td></tr>
+          <tr><td>Security, preventing abuse and keeping the service running</td><td>Technical server data, sign-in timestamps, deletion records</td><td>Our legitimate interest in a secure, reliable service (Art. 6(1)(f))</td></tr>
+          <tr><td>Answering your requests</td><td>The content of your e-mail</td><td>Legitimate interest and, where you exercise a right, our legal obligation (Art. 6(1)(c), (f))</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2 id="processors">7. Service providers</h2>
+      <p>These companies process data on our behalf or as independent providers of the sign-in and payment steps. We do not sell personal data and we do not share it for advertising.</p>
+      <div class="table-scroll">
+      <table>
+        <thead><tr><th>Provider</th><th>Role</th><th>Data</th></tr></thead>
+        <tbody>
+          <tr><td>Supabase (Supabase, Inc., United States; contracting entity Supabase Pte. Ltd., Singapore)</td><td>Authentication, database and server functions (hosting of your account and synced data)</td><td>All account and synced data in Sections 3–5; technical request logs. Our Supabase project is hosted on Amazon Web Services in the <strong>Central EU (Frankfurt), Germany</strong> region (<code>eu-central-1</code>): your account record, the database and the server functions that process your data run there. See <a href="#transfers">International transfers</a> for what may be processed elsewhere.</td></tr>
+          <tr><td>RevenueCat, Inc.</td><td>Checks and keeps track of your purchase so the app knows whether you have full access</td><td>Your account UUID (used as the RevenueCat customer identifier), purchase history and store receipts, app and device metadata sent by their SDK. RevenueCat does not receive your e-mail, name or tracking data from us. The app does not enable RevenueCat's optional collection of advertising or device identifiers.</td></tr>
+          <tr><td>Google LLC — Google Play Billing</td><td>Processes payments and manages subscriptions for Android purchases</td><td>Your purchase and payment details, under Google's own terms and privacy policy</td></tr>
+          <tr><td>Google LLC — Sign in with Google</td><td>Identity provider</td><td>Your Google account identity (e-mail, name, picture) is shared with our authentication service when you sign in, under Google's privacy policy</td></tr>
+          <tr><td>Apple Inc. — Sign in with Apple and App Store</td><td>Identity provider and, on iOS, payments</td><td>Your Apple identity (an Apple-specific user identifier, your e-mail or a private relay address, and your name if you share it); on iOS, your purchase, under Apple's privacy policy</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>The app is built with Expo. Expo's build service compiles the app for us but is not part of the running app: MacroLoom does not use Expo's over-the-air update or analytics services, and no data about you is sent to Expo while you use the app.</p>
+
+      <h2 id="not-collected">8. What MacroLoom does not do</h2>
+      <ul>
+        <li>No advertising and no advertising identifiers.</li>
+        <li>No third-party analytics, tracking or crash-reporting SDKs. (Google Play and Apple may still show us anonymous crash and install statistics from their own platforms.)</li>
+        <li>No location data, contacts, photos, microphone or camera access.</li>
+        <li>No push notifications and no push tokens; reminders are scheduled on your device only.</li>
+        <li>No passwords, and no e-mail or magic-link sign-in: the app offers Sign in with Google and Sign in with Apple only.</li>
+        <li>No sale or sharing of personal data for marketing, and no marketing e-mails.</li>
+      </ul>
+
+      <h2 id="permissions">9. App permissions</h2>
+      <p>On Android the app requests or declares the following permissions. Some are declared automatically by libraries the app is built with and are not used by MacroLoom itself.</p>
+      <ul>
+        <li><strong>Internet and network state</strong> — signing in, syncing your account and checking purchases.</li>
+        <li><strong>Notifications</strong> (Android 13+) — asked only when you turn the weigh-in reminder on. <strong>Boot completed, vibrate, wake lock</strong> — so a scheduled reminder survives a restart and can alert you.</li>
+        <li><strong>Google Play Billing</strong> — in-app purchases.</li>
+        <li><strong>Biometric / fingerprint</strong> — declared by the secure-storage library; MacroLoom does not ask for a fingerprint or face unlock.</li>
+        <li><strong>Read / write external storage</strong> (Android 12 and earlier only) — declared by a library; MacroLoom does not read or write your files.</li>
+        <li><strong>Launcher badge permissions</strong> for various phone brands — declared by the notification library so an app badge count can be shown.</li>
+      </ul>
+
+      <h2 id="retention">10. Retention and deletion</h2>
+      <ul>
+        <li><strong>While you have an account:</strong> your tracking data and settings are kept so that the app can show and sync them. Finished tracking periods remain in your History until you delete your account.</li>
+        <li><strong>Account deletion in the app:</strong> deleting your account from Settings removes your authentication record and, in the same transaction, every row that belongs to your account on our server: foods, periods, entries, weight entries, settings, device-sync status, trial/access status and the import ledger. Your RevenueCat customer record is then deleted through RevenueCat's API; this is retried until RevenueCat confirms it.</li>
+        <li><strong>Account deletion by e-mail:</strong> we carry out the same deletion manually from our server administration console, which removes your authentication record and every row that belongs to your account, and we delete your RevenueCat customer record manually. We complete e-mail requests within 30 days of receiving them, which is within the one-month period the GDPR allows (Art. 12(3)).</li>
+        <li><strong>What remains after an in-app deletion:</strong> a deletion record holding only the account's UUID, the deletion time and the cleanup status. It contains no e-mail address, name, tracking data or purchase data and exists so that the RevenueCat customer record is verifiably removed and never recreated by an old device. It is kept indefinitely, on the basis of our legitimate interest in completing and proving the deletion (Art. 6(1)(f)); without the deleted account data it cannot be linked back to you. Deletions carried out manually after an e-mail request do not create this record.</li>
+        <li><strong>Store subscriptions</strong> are not cancelled by deleting your account; cancel them in Google Play or your Apple ID settings.</li>
+        <li><strong>Backups and logs:</strong> on our current hosting plan (Supabase Free) there are no automated database backups of our project, so deleted data does not live on in a backup that we hold or could restore. Platform logs (API, database and authentication logs) are retained for one day and then expire. If we move to a plan that includes backups, we will state the backup retention period here.</li>
+        <li><strong>E-mails you send us</strong> (including deletion requests) are kept as long as needed to handle your request and to show that we handled it.</li>
+      </ul>
+
+      <h2 id="security">11. Security</h2>
+      <p>Measures actually in place in the app and on the server:</p>
+      <ul>
+        <li>All network traffic uses HTTPS. The app instructs the device never to cache responses from our server.</li>
+        <li>Database row-level security limits every read to the signed-in user's own rows; all writes go through server functions that verify the caller's identity on the server before touching any data, and that refuse writes from a device that is not the account's active device.</li>
+        <li>No administrative or secret keys are shipped in the app. Server-side secrets (for the database, RevenueCat and Apple) exist only in server configuration.</li>
+        <li>Account deletion can only be requested for the account that owns the current session, and only after that session has been verified with the authentication server.</li>
+        <li>On your device, the sign-in session is encrypted with a key held in the system secure store, and the offline-access record is bound to that device.</li>
+        <li>Diagnostic logging in the app is limited to fixed status messages; it never writes tokens, e-mail addresses, identifiers or tracking data.</li>
+      </ul>
+      <p>No system is perfectly secure. If you believe your account has been accessed without authorisation, contact us at the address below.</p>
+
+      <h2 id="transfers">12. International transfers</h2>
+      <p>Your account and synced data are stored in the European Union: our Supabase project runs in Frankfurt, Germany. We cannot guarantee that every processing step stays inside the EU/EEA, because some providers operate elsewhere:</p>
+      <ul>
+        <li><strong>Supabase</strong> states that its platform logs are stored in EU data centres, but its account, billing and support systems and some of its sub-processors operate in the United States and Singapore, and its contracting entity is Supabase Pte. Ltd. (Singapore). Transfers out of the EU/EEA are covered by the European Commission's Standard Contractual Clauses (Decision (EU) 2021/914) incorporated in the <a href="https://supabase.com/legal/dpa">Supabase Data Processing Addendum</a>, supported by Supabase's transfer impact assessment. See also Supabase's <a href="https://supabase.com/legal/privacy-resources/data-residency-and-transfers-faq">data residency and transfers FAQ</a>.</li>
+        <li><strong>RevenueCat, Inc.</strong> operates in the United States on Amazon Web Services, so your account UUID and purchase status are transferred to the US. The <a href="https://www.revenuecat.com/dpa">RevenueCat Data Processing Addendum</a> incorporates the Standard Contractual Clauses (module two, controller to processor) and the UK addendum.</li>
+        <li><strong>Google LLC</strong> (Sign in with Google, Google Play Billing) is certified under the EU–US Data Privacy Framework and also relies on Standard Contractual Clauses, as described on <a href="https://policies.google.com/privacy/frameworks">Google's data-transfer frameworks page</a>.</li>
+        <li><strong>Apple:</strong> for users in the EEA, the UK and Switzerland, Apple Distribution International Limited (Ireland) is the controller for Sign in with Apple and the App Store, and <a href="https://www.apple.com/legal/privacy/en-ww/">Apple's privacy policy</a> states that its international transfers are governed by Standard Contractual Clauses.</li>
+      </ul>
+      <p>The links above lead to the providers' own documents, which may change; we check them when we update this policy.</p>
+
+      <h2 id="rights">13. Your rights</h2>
+      <p>If you are in the EU/EEA or another jurisdiction with similar rights, you can ask us to:</p>
+      <ul>
+        <li>confirm whether we process your data and give you a copy of it (access and portability);</li>
+        <li>correct inaccurate data (most of your data you can edit directly in the app);</li>
+        <li>delete your data (see <a href="delete-account.html">Delete Your Account</a>);</li>
+        <li>restrict or object to processing based on our legitimate interests;</li>
+        <li>withdraw consent at any time, for example by turning the reminder off or deleting entries; this does not affect processing that already happened.</li>
+      </ul>
+      <p>To exercise a right, e-mail <a href="mailto:macroloom.app@gmail.com?subject=MacroLoom%20data%20request">macroloom.app@gmail.com</a> from the address you use to sign in. We may ask you to confirm that you own the account before acting. We answer within one month, as the GDPR requires (Art. 12(3)); for unusually complex or numerous requests this can be extended by up to two further months, and we tell you within the first month if that is the case. You also have the right to lodge a complaint with a data-protection supervisory authority. The authority responsible for us is the Finnish <a href="https://tietosuoja.fi/en">Office of the Data Protection Ombudsman</a> (Tietosuojavaltuutetun toimisto). If you live or work in another EU/EEA country, you may also complain to the authority there.</p>
+      <p>Because we hold no card details and run no marketing, there is no automated decision-making or profiling to object to.</p>
+
+      <h2 id="children">14. Age requirement</h2>
+      <p>MacroLoom is a diet and weight tracking tool intended only for adults aged 18 and older, and it is listed on Google Play for an audience of 18+. It is not directed to children or teenagers. The app does not technically verify your age; by creating an account you confirm that you are at least 18. If we learn that someone under 18 has an account, we delete it. If you believe this has happened, contact us at the address below.</p>
+
+      <h2 id="changes">15. Changes to this policy</h2>
+      <p>When the app starts collecting different data or using a new provider, we update this page and change the date at the top. For significant changes we will also tell you in the app or by e-mail. The current version is always available at this address and from Settings → Account → Privacy inside the app.</p>
+
+      <h2 id="contact">16. Contact</h2>
+      <p>Privacy questions, data requests and deletion requests: <a href="mailto:macroloom.app@gmail.com?subject=MacroLoom%20privacy">macroloom.app@gmail.com</a>.</p>
+      <p>Controller: <strong>Matias Myllymäki</strong>, private individual, Finland (see <a href="#controller">Section 1</a>). Contact is by e-mail only.</p>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 MacroLoom</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="delete-account.html">Delete Your Account</a> · <a href="mailto:macroloom.app@gmail.com">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>

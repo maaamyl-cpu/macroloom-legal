@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete Your MacroLoom Account</title>
+  <meta name="description" content="How to permanently delete your MacroLoom account and its data, in the app or by e-mail.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/logo.png" alt="" width="32" height="32"> MacroLoom</a>
+      <nav class="site" aria-label="Legal pages">
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="delete-account.html" aria-current="page">Delete Your Account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <article>
+      <h1>Delete your MacroLoom account</h1>
+      <p class="meta">Applies to the MacroLoom app (Android package <code>com.macroloom.app</code>). Last updated 15 November 2026.</p>
+
+      <p>You can permanently delete your MacroLoom account and all of the data it holds at any time. There are two ways: from inside the app, which is immediate, or by e-mail if you no longer have the app installed.</p>
+      <p class="note"><strong>Before you delete:</strong> deleting your account does not cancel a Google Play or App Store subscription. If you have an active subscription, cancel it first in Google Play (Payments &amp; subscriptions → Subscriptions) or in your Apple ID settings; otherwise the store keeps billing you for an account that no longer exists.</p>
+
+      <h2 id="in-app">Option 1 — Delete from inside the app</h2>
+      <div class="steps">
+        <ol>
+          <li>Open MacroLoom and make sure you are online and signed in to the account you want to delete.</li>
+          <li>Open <strong>Settings</strong> (the gear icon), then the <strong>Account</strong> tab.</li>
+          <li>Scroll to the <strong>Delete Account</strong> card at the bottom and tap <strong>Delete Account</strong>.</li>
+          <li>Read the confirmation and tap <strong>Delete</strong>. If you signed in with Apple, the app first asks you to sign in with Apple once more, so that MacroLoom can remove its access to your Apple account.</li>
+          <li>Wait for the confirmation message. The app then removes the account's data from your device and signs the device out.</li>
+        </ol>
+      </div>
+      <p>The in-app deletion runs on our server under your own sign-in: the server deletes the account that owns your current session and nothing else. It cannot be used while offline, and it cannot delete a different account.</p>
+
+      <h2 id="by-email">Option 2 — Request deletion by e-mail</h2>
+      <div class="steps">
+        <p>If you have uninstalled the app, cannot sign in, or simply prefer e-mail:</p>
+        <ol>
+          <li>Send an e-mail to <a href="mailto:macroloom.app@gmail.com?subject=Delete%20my%20MacroLoom%20account">macroloom.app@gmail.com</a> with the subject <strong>“Delete my MacroLoom account”</strong>.</li>
+          <li>Send it <strong>from the e-mail address you used to sign in</strong> (your Google account address, or the address Apple gave MacroLoom — this may be an Apple private relay address). Do not include passwords; we never ask for them.</li>
+          <li>We may reply to confirm that the request really comes from the account owner. Once confirmed, we delete the account and its data and reply when it is done. Requests are handled manually by the developer and completed within 30 days of receipt, which is within the one-month deadline the GDPR sets for such requests (Art. 12(3)). If a request were ever so complex that we needed longer, we would tell you within the first month, as the GDPR allows; we do not expect this for a deletion.</li>
+        </ol>
+      </div>
+      <p>If you cannot send e-mail from the sign-in address (for example because the Apple relay address is unknown to you), say so in your message and describe the account as well as you can. We will work out a reasonable way to verify ownership with you before deleting anything.</p>
+
+      <h2 id="what-is-deleted">What is deleted</h2>
+      <ul>
+        <li>Your account record (e-mail address, sign-in provider identifiers and any name or profile picture reference supplied by Google or Apple).</li>
+        <li>Everything synced to your account: your food library, tracking periods and food entries, weight history, macro targets and reset settings, device-sync status, trial and access status, and the import ledger if you migrated data from the old MacroTracker app.</li>
+        <li>Your customer record at RevenueCat, the subscription service that checks purchases for us. For in-app deletions this happens automatically through RevenueCat's API and can take a short while to be confirmed; for e-mail requests we delete it manually as part of handling your request.</li>
+        <li>On the device where you deleted the account from inside the app: the local database, reminder schedule and sign-in session for that account.</li>
+      </ul>
+
+      <h2 id="what-is-kept">What is kept, and why</h2>
+      <ul>
+        <li><strong>A deletion record without personal data (in-app deletions).</strong> After an in-app deletion we keep, indefinitely, only the account's random internal identifier (a UUID), the deletion time and the cleanup status. It is used to make sure the RevenueCat customer record is really gone and never comes back, and it cannot be linked to you without the deleted account data. Deletions we carry out manually after an e-mail request do not create this record.</li>
+        <li><strong>Your e-mail request (e-mail deletions).</strong> We keep the e-mail exchange as long as needed to show that we handled your request.</li>
+        <li><strong>Your Google Play or App Store subscription is not cancelled.</strong> Stores own billing. If you have an active subscription, cancel it yourself in Google Play (Payments &amp; subscriptions → Subscriptions) or in your Apple ID settings. Deleting the account does not refund or stop store billing.</li>
+        <li><strong>Backups and logs.</strong> Our current hosting plan keeps no automated database backups, so deleted data does not live on in a backup. The hosting provider's platform logs expire after one day (see the <a href="privacy.html#retention">retention section of the Privacy Policy</a>).</li>
+        <li><strong>Other devices</strong> you used with the account still hold a local copy of the data until the app is uninstalled or the device is reset from inside the app. The next time such a device goes online, it can no longer sign in as the deleted account.</li>
+      </ul>
+
+      <h2 id="only-local">Deleting only the data on one device</h2>
+      <p>Uninstalling MacroLoom removes its local database, reminder schedule and stored sign-in from that device. Your account and its synced data remain until you delete the account as described above.</p>
+
+      <h2 id="questions">Questions</h2>
+      <p>E-mail <a href="mailto:macroloom.app@gmail.com">macroloom.app@gmail.com</a>. The <a href="privacy.html">Privacy Policy</a> describes everything MacroLoom stores and your rights in detail.</p>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 MacroLoom</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="delete-account.html">Delete Your Account</a> · <a href="mailto:macroloom.app@gmail.com">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>
